@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 `;
 
 const HiddenNativeSelect = styled.select`
+  appearance: none;
   position: absolute;
   top: 0;
   left: 0;
