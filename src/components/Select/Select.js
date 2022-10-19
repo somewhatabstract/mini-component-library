@@ -50,13 +50,13 @@ const Select = ({ label, value, onChange, children }) => {
     <Wrapper>
       <VisuallyHidden>{label}</VisuallyHidden>
       <CustomSelect>
-        <HiddenNativeSelect value={value} onChange={onChange}>
-        {children}
-        </HiddenNativeSelect>
         <IconWrapper>
           <Icon id="chevron-down" size={24} strokeWidth={2} />
         </IconWrapper>
         {displayedValue}
+        <HiddenNativeSelect value={value} onChange={onChange}>
+        {children}
+        </HiddenNativeSelect>
       </CustomSelect>
     </Wrapper>
   );
